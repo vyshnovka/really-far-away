@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 36
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 2081823275
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: makeup-spritesheet_1
+      m_Hash: -1463772331
+      m_Sprite: {fileID: 562430990, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 562430990, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_3
+      m_Hash: 1187969657
+      m_Sprite: {fileID: 994580143, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 994580143, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: Down
+    m_Hash: -1127399675
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: makeup-spritesheet_0
+      m_Hash: -540562493
+      m_Sprite: {fileID: -190068740, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -190068740, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_1
+      m_Hash: -1463772331
+      m_Sprite: {fileID: 562430990, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 562430990, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_2
+      m_Hash: 835308271
+      m_Sprite: {fileID: 1974444736, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1974444736, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_3
+      m_Hash: 1187969657
+      m_Sprite: {fileID: 994580143, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 994580143, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Up
+    m_Hash: -703542574
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: makeup-spritesheet_4
+      m_Hash: -659918886
+      m_Sprite: {fileID: -1354877901, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1354877901, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_5
+      m_Hash: -1347592372
+      m_Sprite: {fileID: 1971829491, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1971829491, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_6
+      m_Hash: 916721398
+      m_Sprite: {fileID: -809708377, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -809708377, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_7
+      m_Hash: 1101217376
+      m_Sprite: {fileID: -1187014676, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1187014676, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Left
+    m_Hash: -631945130
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: makeup-spritesheet_8
+      m_Hash: -786684943
+      m_Sprite: {fileID: -589824675, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -589824675, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_9
+      m_Hash: -1508175001
+      m_Sprite: {fileID: -609830777, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -609830777, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_10
+      m_Hash: -277693759
+      m_Sprite: {fileID: -1692436507, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1692436507, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_11
+      m_Hash: -1737127337
+      m_Sprite: {fileID: 156104505, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 156104505, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Right
+    m_Hash: 1963678224
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: makeup-spritesheet_12
+      m_Hash: 24959981
+      m_Sprite: {fileID: 682186567, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 682186567, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_13
+      m_Hash: 1987832699
+      m_Sprite: {fileID: -1544955720, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1544955720, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_14
+      m_Hash: -400589096
+      m_Sprite: {fileID: 894576902, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 894576902, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    - m_Name: makeup-spritesheet_15
+      m_Hash: -1625797042
+      m_Sprite: {fileID: 1192880971, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1192880971, guid: 2b48e7ff2ada8c44dac5b3361524b145, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: 

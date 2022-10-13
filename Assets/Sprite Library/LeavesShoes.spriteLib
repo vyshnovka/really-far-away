@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 36
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 2081823275
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: shoes-spritesheet_1
+      m_Hash: -1404152800
+      m_Sprite: {fileID: -2048639921, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2048639921, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_3
+      m_Hash: 1111504140
+      m_Sprite: {fileID: 1174716063, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1174716063, guid: b74adde75473be74583194de6252a702, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: Down
+    m_Hash: -1127399675
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: shoes-spritesheet_0
+      m_Hash: -615947082
+      m_Sprite: {fileID: -618538870, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -618538870, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_1
+      m_Hash: -1404152800
+      m_Sprite: {fileID: -2048639921, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2048639921, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_2
+      m_Hash: 893846938
+      m_Sprite: {fileID: 1254356380, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1254356380, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_3
+      m_Hash: 1111504140
+      m_Sprite: {fileID: 1174716063, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1174716063, guid: b74adde75473be74583194de6252a702, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Up
+    m_Hash: -703542574
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: shoes-spritesheet_4
+      m_Hash: -601579345
+      m_Sprite: {fileID: -2045461690, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2045461690, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_5
+      m_Hash: -1423732679
+      m_Sprite: {fileID: 901911181, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 901911181, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_6
+      m_Hash: 841662851
+      m_Sprite: {fileID: -1982460285, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1982460285, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_7
+      m_Hash: 1160638741
+      m_Sprite: {fileID: -1109083039, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1109083039, guid: b74adde75473be74583194de6252a702, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Left
+    m_Hash: -631945130
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: shoes-spritesheet_8
+      m_Hash: -711791484
+      m_Sprite: {fileID: -1939203417, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1939203417, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_9
+      m_Hash: -1567237102
+      m_Sprite: {fileID: 514485536, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 514485536, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_10
+      m_Hash: -820399683
+      m_Sprite: {fileID: 1209453436, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1209453436, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_11
+      m_Hash: -1205960405
+      m_Sprite: {fileID: -711656057, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -711656057, guid: b74adde75473be74583194de6252a702, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Right
+    m_Hash: 1963678224
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: shoes-spritesheet_12
+      m_Hash: 555208849
+      m_Sprite: {fileID: -1216876762, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1216876762, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_13
+      m_Hash: 1443946503
+      m_Sprite: {fileID: 385206609, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 385206609, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_14
+      m_Hash: -931891804
+      m_Sprite: {fileID: -1783013887, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1783013887, guid: b74adde75473be74583194de6252a702, type: 3}
+    - m_Name: shoes-spritesheet_15
+      m_Hash: -1082964686
+      m_Sprite: {fileID: -1042931070, guid: b74adde75473be74583194de6252a702, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1042931070, guid: b74adde75473be74583194de6252a702, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: 
