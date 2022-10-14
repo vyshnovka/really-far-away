@@ -25,6 +25,12 @@ public class PlayerController : Animatable
         movementDirection.x = Input.GetButton("Horizontal") ? Input.GetAxis("Horizontal") : 0;
         movementDirection.y = Input.GetButton("Vertical") ? Input.GetAxis("Vertical") : 0;
 
+        if (!LevelManager.isAbleToMove)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+        
         rb.velocity = movementDirection.normalized * movementSpeed;
     }
 }
