@@ -18,6 +18,12 @@ public class Exit : Interactable
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (LevelManager.isWearingFullSet)
+        {
+            GetComponent<Collider2D>().isTrigger = true;
+            return;
+        }
+
         DialogueManager.instance.StartMonologue(dialogue, this);
     }
 }

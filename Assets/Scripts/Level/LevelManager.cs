@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
 
     public static bool isAbleToMove = true;
 
-    //public static bool is
+    public static bool isWearingFullSet = false;
 
     void Awake()
     {
