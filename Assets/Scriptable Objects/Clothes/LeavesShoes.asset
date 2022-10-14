@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9873624c770144ea0d0b73836f6de5, type: 3}
   m_Name: LeavesShoes
   m_EditorClassIdentifier: 
-  description: Grass
+  description: Tuffet
   type: 2
   icon: {fileID: -2048639921, guid: b74adde75473be74583194de6252a702, type: 3}
   price: 10

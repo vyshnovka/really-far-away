@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9873624c770144ea0d0b73836f6de5, type: 3}
   m_Name: WoodPants
   m_EditorClassIdentifier: 
-  description: Wooden pants
+  description: Tree bark
   type: 1
   icon: {fileID: -2028977186, guid: e43b3baba815370489bb92f2c9d16fd1, type: 3}
   price: 10
