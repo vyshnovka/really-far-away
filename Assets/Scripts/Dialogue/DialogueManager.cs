@@ -99,7 +99,7 @@ public class DialogueManager : MonoBehaviour
 
     private void SetDialogueValue(Dialogue dialogue)
     {
-        LevelManager.instance.isAbleToMove = false;
+        LevelManager.isAbleToMove = false;
 
         dialogueToDisplay = dialogue;
 

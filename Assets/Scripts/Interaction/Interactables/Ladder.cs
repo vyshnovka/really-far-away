@@ -11,7 +11,7 @@ public class Ladder : Interactable
 
     public override void FinishInteraction()
     {
-        LevelManager.instance.isAbleToMove = true;
+        LevelManager.isAbleToMove = true;
 
         DialogueManager.instance.FinishDialogueOrMonologue();
     }

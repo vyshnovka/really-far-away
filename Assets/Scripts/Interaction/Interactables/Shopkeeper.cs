@@ -21,7 +21,7 @@ public class Shopkeeper : Interactable
 
     public override void FinishInteraction()
     {
-        LevelManager.instance.isAbleToMove = true;
+        LevelManager.isAbleToMove = true;
 
         isDoneTalkingOnce = true;
 
