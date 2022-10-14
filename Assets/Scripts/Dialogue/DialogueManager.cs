@@ -68,6 +68,8 @@ public class DialogueManager : MonoBehaviour
                     }
                     else
                     {
+                        dialogueToDisplay = null;
+
                         objectOfInteraction.FinishInteraction();
                     }
                 }
