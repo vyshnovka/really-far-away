@@ -6,6 +6,11 @@ public class Sign : Interactable
 {
     public override void Interact()
     {
-        Debug.Log("Interaction with sign detected!");
+        DialogueManager.instance.StartMonologue(dialogue, this);
+    }
+
+    public override void FinishInteraction()
+    {
+        DialogueManager.instance.FinishDialogueOrMonologue();
     }
 }

@@ -5,8 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Interactable))]
 public class InteractableTrigger : MonoBehaviour
 {
+    [Header("Object to show as a prompt")]
     [SerializeField]
-    private GameObject button;
+    private GameObject buttonWithE;
     [SerializeField]
     [Range(0, 1)]
     private float positionOffsetX = 0.5f;
@@ -36,16 +37,16 @@ public class InteractableTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        button.SetActive(true);
+        buttonWithE.SetActive(true);
 
-        button.transform.position = new Vector2(transform.position.x - positionOffsetX, transform.position.y + positionOffsetY);
+        buttonWithE.transform.position = new Vector2(transform.position.x - positionOffsetX, transform.position.y + positionOffsetY);
 
         isInteractable = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        button.SetActive(false);
+        buttonWithE.SetActive(false);
 
         isInteractable = false;
     }
