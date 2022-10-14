@@ -68,8 +68,6 @@ public class DialogueManager : MonoBehaviour
                     }
                     else
                     {
-                        objectOfInteraction.isDoneTalkingOnce = true;
-
                         objectOfInteraction.FinishInteraction();
                     }
                 }
@@ -84,7 +82,9 @@ public class DialogueManager : MonoBehaviour
         opponentBubble.SetActive(true);
         opponentImage.sprite = dialogue.opponent;
 
-        SetDialogueValue(dialogue, that);
+        objectOfInteraction = that;
+
+        SetDialogueValue(dialogue);
     }
 
     public void StartMonologue(Dialogue dialogue, Interactable that)
@@ -92,19 +92,26 @@ public class DialogueManager : MonoBehaviour
         dialogueBubble.SetActive(true);
         characterBubble.SetActive(true);
 
-        SetDialogueValue(dialogue, that);
+        objectOfInteraction = that;
+
+        SetDialogueValue(dialogue);
     }
 
-    private void SetDialogueValue(Dialogue dialogue, Interactable that)
+    private void SetDialogueValue(Dialogue dialogue)
     {
+        LevelManager.instance.isAbleToMove = false;
+
         dialogueToDisplay = dialogue;
-        objectOfInteraction = that;
 
         isTyping = true;
 
         if (objectOfInteraction.isDoneTalkingOnce)
         {
             lineIndex = dialogueToDisplay.lines.Count - 1;
+        }
+        else
+        {
+            lineIndex = 0;
         }
         lineToDisplay = dialogueToDisplay.lines[lineIndex];
 

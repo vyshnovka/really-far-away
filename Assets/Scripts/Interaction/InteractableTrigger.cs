@@ -9,10 +9,10 @@ public class InteractableTrigger : MonoBehaviour
     [SerializeField]
     private GameObject buttonWithE;
     [SerializeField]
-    [Range(0, 1)]
+    [Range(-1, 1)]
     private float positionOffsetX = 0.5f;
     [SerializeField]
-    [Range(0, 1)]
+    [Range(-1, 1)]
     private float positionOffsetY = 0.5f;
 
     private bool isInteractable = false;

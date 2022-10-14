@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sign : Interactable
+public class Ladder : Interactable
 {
     public override void Interact()
     {

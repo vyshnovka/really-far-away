@@ -14,9 +14,6 @@ public class Shopkeeper : Interactable
     [SerializeField]
     private GameObject inventory;
 
-    [HideInInspector]
-    public bool isDoneTalkingOnce = false;
-
     public override void Interact()
     {
         DialogueManager.instance.StartDialogue(dialogue, this);
@@ -24,6 +21,10 @@ public class Shopkeeper : Interactable
 
     public override void FinishInteraction()
     {
+        LevelManager.instance.isAbleToMove = true;
+
+        isDoneTalkingOnce = true;
+
         prompt.SetActive(true);
     }
 
