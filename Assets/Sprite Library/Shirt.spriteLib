@@ -17,120 +17,120 @@ MonoBehaviour:
     m_Hash: 2081823275
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: shirt-spritesheet_1
-      m_Hash: -1952109863
-      m_Sprite: {fileID: 24493035, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_1
+      m_Hash: 386997582
+      m_Sprite: {fileID: -1049679046, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 24493035, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_3
-      m_Hash: 1705724917
-      m_Sprite: {fileID: 383913500, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_3
+      m_Hash: -115377054
+      m_Sprite: {fileID: 1328765187, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 383913500, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 2
   - m_Name: Down
     m_Hash: -1127399675
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: shirt-spritesheet_0
-      m_Hash: -56485297
-      m_Sprite: {fileID: 420264519, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_0
+      m_Hash: 1612066264
+      m_Sprite: {fileID: 827461778, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 420264519, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_1
-      m_Hash: -1952109863
-      m_Sprite: {fileID: 24493035, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_1
+      m_Hash: 386997582
+      m_Sprite: {fileID: -1049679046, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 24493035, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_2
-      m_Hash: 313293667
-      m_Sprite: {fileID: 2112676991, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_2
+      m_Hash: -1911010060
+      m_Sprite: {fileID: 1714615100, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 2112676991, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_3
-      m_Hash: 1705724917
-      m_Sprite: {fileID: 383913500, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_3
+      m_Hash: -115377054
+      m_Sprite: {fileID: 1328765187, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 383913500, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 4
   - m_Name: Up
     m_Hash: -703542574
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: shirt-spritesheet_4
-      m_Hash: -70263210
-      m_Sprite: {fileID: 1681731888, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_4
+      m_Hash: 1736174017
+      m_Sprite: {fileID: -1239267319, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 1681731888, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_5
-      m_Hash: -1932988736
-      m_Sprite: {fileID: 1525809305, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_5
+      m_Hash: 276617559
+      m_Sprite: {fileID: -1455039118, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 1525809305, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_6
-      m_Hash: 365019002
-      m_Sprite: {fileID: 1509727666, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_6
+      m_Hash: -1988785939
+      m_Sprite: {fileID: 607714473, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 1509727666, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_7
-      m_Hash: 1657180140
-      m_Sprite: {fileID: -1455370303, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_7
+      m_Hash: -26036101
+      m_Sprite: {fileID: 956537563, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: -1455370303, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 4
   - m_Name: Left
     m_Hash: -631945130
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: shirt-spritesheet_8
-      m_Hash: -226913667
-      m_Sprite: {fileID: 1379643615, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_8
+      m_Hash: 1858971114
+      m_Sprite: {fileID: 1453803231, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 1379643615, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_9
-      m_Hash: -2055298325
-      m_Sprite: {fileID: 1377352712, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_9
+      m_Hash: 432706940
+      m_Sprite: {fileID: -1626326724, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 1377352712, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_10
-      m_Hash: 190779515
-      m_Sprite: {fileID: 696527881, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_10
+      m_Hash: 1705550507
+      m_Sprite: {fileID: -499702254, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 696527881, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_11
-      m_Hash: 2086150381
-      m_Sprite: {fileID: 1209915447, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_11
+      m_Hash: 313496125
+      m_Sprite: {fileID: 744354450, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 1209915447, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 4
   - m_Name: Right
     m_Hash: 1963678224
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: shirt-spritesheet_12
-      m_Hash: -447647401
-      m_Sprite: {fileID: -1516522962, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_12
+      m_Hash: -1952005241
+      m_Sprite: {fileID: 1597612951, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: -1516522962, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_13
-      m_Hash: -1839840831
-      m_Sprite: {fileID: -590188145, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_13
+      m_Hash: -56495343
+      m_Sprite: {fileID: 2049317995, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: -590188145, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_14
-      m_Hash: 204657762
-      m_Sprite: {fileID: 969939573, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_14
+      m_Hash: 1657104050
+      m_Sprite: {fileID: 2084724579, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 969939573, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    - m_Name: shirt-spritesheet_15
-      m_Hash: 2067129588
-      m_Sprite: {fileID: 355362883, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-      m_FromMain: 0
+    - m_Name: player-spritesheet_15
+      m_Hash: 365057572
+      m_Sprite: {fileID: 1965609145, guid: f2a66b12568e6fe47946f7c16dddf118, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 355362883, guid: 411af0cf0f4ccf345baca43bf2991da2, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 4
-  m_PrimaryLibraryGUID: 
+  m_PrimaryLibraryGUID: 492a502de0b875742b43a2e054fb2a25
