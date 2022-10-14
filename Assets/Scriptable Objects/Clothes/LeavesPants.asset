@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9873624c770144ea0d0b73836f6de5, type: 3}
+  m_Name: LeavesPants
+  m_EditorClassIdentifier: 
+  description: Long leaves
+  type: 1
+  icon: {fileID: -571542271, guid: e277af841dd80234babf7cc515cb10f2, type: 3}
+  price: 5
+  sprites: {fileID: 7108339969198208228, guid: bd660225cf2662947b61b243b6af8872, type: 3}
