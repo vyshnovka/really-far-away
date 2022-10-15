@@ -13,6 +13,9 @@ public class MoneyManager : MonoBehaviour
 
     private int cash;
 
+    [SerializeField]
+    private int startCash = 30;
+
     private void Awake()
     {
         if (instance)
@@ -25,7 +28,7 @@ public class MoneyManager : MonoBehaviour
 
     void Start()
     {
-        cash = PlayerPrefs.GetInt("Cash", 30);
+        cash = startCash;
 
         text.text = cash.ToString();
     }
