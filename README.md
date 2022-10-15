@@ -12,3 +12,7 @@ Just a clothing store prototype implemented as a interview task.
 1. Install Unity 2021.3.2 from [archive](https://unity3d.com/get-unity/download/archive).    
 2. Clone this repository using `git clone https://github.com/vyshnovka/really-far-away.git` in Git Bash.    
 4. Open created folder as a project in Unity Hub.    
+
+## Credits
+
+[The Adventure Begins](https://opengameart.org/content/the-adventure-begins-8-bit-remix) sound created by **bart**.    
