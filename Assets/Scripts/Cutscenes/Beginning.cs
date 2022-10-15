@@ -11,6 +11,6 @@ public class Beginning : MonoBehaviour
         StartCoroutine(Utility.TimedEvent(() => 
         {
             LevelManager.isAbleToMove = true;
-        }, 12f));
+        }, 13f));
     }
 }
