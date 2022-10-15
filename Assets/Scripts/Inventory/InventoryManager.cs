@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
@@ -12,9 +13,24 @@ public class InventoryManager : MonoBehaviour
 
     [SerializeField]
     private List<InventorySlot> inventorySlots;
-
-    [SerializeField]
     private List<Clothes> inventoryItems = new List<Clothes>();
+
+    public List<EquipSlot> equippedSlots;
+    private List<Clothes> equippedItems = new List<Clothes>();
+
+    [Header("Sprite for the empty slot")]
+    [SerializeField]
+    private Sprite empty;
+
+    [Header("Places to store clothes")]
+    [SerializeField]
+    private List<SpriteLibrary> spriteLibrary;
+
+    [Header("Inventory area for unequipping")]
+    public RectTransform unequipArea;
+
+    [Header("All equiping slots")]
+    public List<RectTransform> equipSlots;
 
     void Awake()
     {
@@ -24,6 +40,14 @@ public class InventoryManager : MonoBehaviour
         }
 
         instance = this;
+    }
+
+    void Start()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            equippedItems.Add(null);
+        }
     }
 
     void Update()
@@ -55,6 +79,14 @@ public class InventoryManager : MonoBehaviour
         FillInventory();
     }
 
+    public void RemoveFromInventory(Clothes oldItem)
+    {
+        inventoryItems.Remove(oldItem);
+
+        FillInventory();
+        ClearInventoryItem();
+    }
+
     private void FillInventory()
     {
         for (int i = 0; i < inventoryItems.Count; i++)
@@ -63,5 +95,63 @@ public class InventoryManager : MonoBehaviour
 
             inventorySlots[i].gameObject.GetComponent<Image>().sprite = inventoryItems[i].icon;
         }
+    }
+
+    public void Equip(int position)
+    {
+        inventoryItems.Remove(ShopManager.instance.currentlyDraggedItem);
+        equippedSlots[position].clothesToHold = ShopManager.instance.currentlyDraggedItem;
+        equippedItems[position] = ShopManager.instance.currentlyDraggedItem;
+
+        equippedSlots[position].GetComponent<Image>().sprite = ShopManager.instance.currentlyDraggedItem.icon;
+
+        spriteLibrary[position].spriteLibraryAsset = ShopManager.instance.currentlyDraggedItem.sprites;
+
+        ShopManager.instance.currentlyDraggedItem = null;
+
+        FillInventory();
+        ClearInventoryItem();
+    }
+
+    public void Unequip()
+    {
+        int position = equippedItems.FindIndex(a => a == ShopManager.instance.currentlyDraggedItem);
+
+        AddToInventory(equippedItems[position]);
+
+        spriteLibrary[position].spriteLibraryAsset = null;
+        spriteLibrary[position].gameObject.GetComponent<SpriteRenderer>().sprite = null;
+
+        equippedSlots[position].gameObject.GetComponent<Image>().sprite = empty;
+        equippedSlots[position].clothesToHold = null;
+
+        equippedItems[position] = null;
+
+        ShopManager.instance.currentlyDraggedItem = null;
+
+        FillInventory();
+    }
+
+    public bool CheckIfEquipped()
+    {
+        for (int i = 0; i < equippedItems.Count; i++)
+        {
+            if (equippedSlots[i].gameObject.GetComponent<Image>().sprite != empty)
+            {
+                if (equippedItems.Contains(ShopManager.instance.currentlyDraggedItem))
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private void ClearInventoryItem()
+    {
+        inventorySlots[inventoryItems.Count].clothesToHold = null;
+
+        inventorySlots[inventoryItems.Count].gameObject.GetComponent<Image>().sprite = empty;
     }
 }

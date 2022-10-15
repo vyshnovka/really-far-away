@@ -26,6 +26,8 @@ public class ShopManager : MonoBehaviour
     private TextMeshProUGUI itemName;
     [SerializeField]
     private TextMeshProUGUI itemPrice;
+    [SerializeField]
+    private GameObject buyButton;
 
     [Header("Sprite for the empty slot")]
     [SerializeField]
@@ -35,6 +37,9 @@ public class ShopManager : MonoBehaviour
     public RectTransform sellArea;
 
     private Clothes choosenItem;
+
+    [HideInInspector]
+    public Clothes currentlyDraggedItem;
 
     void Awake()
     {
@@ -68,6 +73,15 @@ public class ShopManager : MonoBehaviour
         itemImage.sprite = choosenItem.icon;
         itemName.text = choosenItem.description;
         itemPrice.text = choosenItem.price.ToString();
+
+        if (choosenItem.price > MoneyManager.instance.GetCash())
+        {
+            buyButton.SetActive(false);
+        }
+        else
+        {
+            buyButton.SetActive(true);
+        }
     }
 
     public void HideItemInfo()
@@ -86,12 +100,22 @@ public class ShopManager : MonoBehaviour
             InventoryManager.instance.AddToInventory(choosenItem);
 
             MoneyManager.instance.SetCash(-choosenItem.price);
+
+            HideItemInfo();
         }
     }
 
     public void Sell()
     {
-        Debug.Log("Sell item!");
+        MoneyManager.instance.SetCash(currentlyDraggedItem.price);
+
+        shopItems.Add(currentlyDraggedItem);
+
+        InventoryManager.instance.RemoveFromInventory(currentlyDraggedItem);
+
+        currentlyDraggedItem = null;
+
+        FillShop();
     }
 
     private void FillShop()
