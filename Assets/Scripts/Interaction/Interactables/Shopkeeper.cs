@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shopkeeper : Interactable
 {
     [Header("Answer buttons")]
     [SerializeField]
     private GameObject prompt;
+    [SerializeField]
+    private Button yesButton;
+    [SerializeField]
+    private Button noButton;
 
     [Header("Shop and Inventory areas to display after \"YES!\"")]
     [SerializeField]
@@ -21,9 +26,13 @@ public class Shopkeeper : Interactable
 
     public override void FinishInteraction()
     {
-        LevelManager.isAbleToMove = true;
-
         isDoneTalkingOnce = true;
+
+        yesButton.onClick.RemoveAllListeners();
+        noButton.onClick.RemoveAllListeners();
+
+        yesButton.onClick.AddListener(Yes);
+        noButton.onClick.AddListener(No);
 
         prompt.SetActive(true);
     }
@@ -40,6 +49,8 @@ public class Shopkeeper : Interactable
 
     public void No()
     {
+        LevelManager.isAbleToMove = true;
+
         DialogueManager.instance.FinishDialogueOrMonologue();
 
         prompt.SetActive(false);

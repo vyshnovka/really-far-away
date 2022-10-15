@@ -16,6 +16,8 @@ public class EquipSlot : Slot, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
+        ShopManager.instance.infoArea.SetActive(false);
+
         transform.position = Input.mousePosition;
 
         ShopManager.instance.currentlyDraggedItem = clothesToHold;

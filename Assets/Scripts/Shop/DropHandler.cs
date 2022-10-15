@@ -22,9 +22,9 @@ public class DropHandler : MonoBehaviour, IDropHandler
         {
             if (ShopManager.instance.currentlyDraggedItem)
             {
-                for (int i = 0; i < InventoryManager.instance.equipSlots.Count; i++)
+                for (int i = 0; i < InventoryManager.instance.equipSlotsRect.Count; i++)
                 {
-                    if (RectTransformUtility.RectangleContainsScreenPoint(InventoryManager.instance.equipSlots[i], Input.mousePosition))
+                    if (RectTransformUtility.RectangleContainsScreenPoint(InventoryManager.instance.equipSlotsRect[i], Input.mousePosition))
                     {
                         if (InventoryManager.instance.equippedSlots[i].type == ShopManager.instance.currentlyDraggedItem.type)
                         {

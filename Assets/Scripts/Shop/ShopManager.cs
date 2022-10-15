@@ -18,8 +18,7 @@ public class ShopManager : MonoBehaviour
     private List<Clothes> shopItems = new List<Clothes>();
 
     [Header("Info zone for choosen item")]
-    [SerializeField]
-    private GameObject infoArea;
+    public GameObject infoArea;
     [SerializeField]
     private Image itemImage;
     [SerializeField]

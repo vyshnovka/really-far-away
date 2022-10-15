@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
@@ -29,8 +30,26 @@ public class InventoryManager : MonoBehaviour
     [Header("Inventory area for unequipping")]
     public RectTransform unequipArea;
 
-    [Header("All equiping slots")]
-    public List<RectTransform> equipSlots;
+    [Header("All equiping slots' gameobjects")]
+    public List<RectTransform> equipSlotsRect;
+
+    [Header("Pop-up for onPointerEnter")]
+    [SerializeField]
+    private GameObject popup;
+    [SerializeField]
+    private Image itemIcon;
+    [SerializeField]
+    private TextMeshProUGUI itemName;
+    [SerializeField]
+    private TextMeshProUGUI itemPrice;
+
+    [SerializeField]
+    [Range(-100, 100)]
+    private float offsetX = 48f;
+    [SerializeField]
+    [Range(-100, 100)]
+    private float offsetY = 48f;
+
 
     void Awake()
     {
@@ -57,6 +76,11 @@ public class InventoryManager : MonoBehaviour
             LevelManager.isAbleToMove = true;
 
             inventoryArea.SetActive(false);
+
+            if (CheckIfAllSet())
+            {
+                LevelManager.isWearingFullSet = true;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.I))
@@ -153,5 +177,34 @@ public class InventoryManager : MonoBehaviour
         inventorySlots[inventoryItems.Count].clothesToHold = null;
 
         inventorySlots[inventoryItems.Count].gameObject.GetComponent<Image>().sprite = empty;
+    }
+
+    private bool CheckIfAllSet()
+    {
+        foreach (var item in equippedItems)
+        {
+            if (!item)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void ShowInventoryItem(InventorySlot slot)
+    {
+        itemIcon.sprite = slot.clothesToHold.icon;
+        itemName.text = slot.clothesToHold.description;
+        itemPrice.text = slot.clothesToHold.price.ToString();
+
+        popup.transform.position = new Vector2(slot.transform.position.x + offsetX, slot.transform.position.y + offsetY);
+
+        popup.SetActive(true);
+    }
+
+    public void HidePopup()
+    {
+        popup.SetActive(false);
     }
 }
