@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Exit : Interactable
+public class ExitClosed : Interactable
 {
     public override void Interact()
     {
