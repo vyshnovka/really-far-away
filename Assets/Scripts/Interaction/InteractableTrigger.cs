@@ -30,7 +30,10 @@ public class InteractableTrigger : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                interactable.Interact();
+                if (LevelManager.isAbleToMove)
+                {
+                    interactable.Interact();
+                }
             }
         }
     }

@@ -77,6 +77,8 @@ public class InventoryManager : MonoBehaviour
 
             inventoryArea.SetActive(false);
 
+            HidePopup();
+
             if (CheckIfAllSet())
             {
                 LevelManager.isWearingFullSet = true;

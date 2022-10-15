@@ -23,6 +23,8 @@ public class InventorySlot : Slot, IDragHandler, IEndDragHandler, IPointerEnterH
 
         ShopManager.instance.sellArea.GetComponent<TextMeshProUGUI>().enabled = true;
         ShopManager.instance.currentlyDraggedItem = clothesToHold;
+
+        InventoryManager.instance.HidePopup();
     }
 
     public void OnEndDrag(PointerEventData eventData)
