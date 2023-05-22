@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
@@ -17,7 +18,10 @@ public class ExitOpened : Interactable
     [SerializeField]
     private SpriteLibrary makeupObject;
 
-    private bool hasMakeup = false;
+    [SerializeField]
+    private List<InteractableTrigger> interactablesToDisable = new();
+
+    private bool askedAboutMakeup = false;
 
     public override void Interact() { }
 
@@ -31,21 +35,26 @@ public class ExitOpened : Interactable
         yesButton.onClick.AddListener(YesEnd);
         noButton.onClick.AddListener(NoEnd);
 
+        askedAboutMakeup = true;
+
         prompt.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!hasMakeup)
+        if (!askedAboutMakeup)
         {
+            foreach (var interactable in interactablesToDisable)
+            {
+                interactable.gameObject.SetActive(false);
+            }
+
             DialogueManager.instance.StartDialogue(dialogue, this);
         }
     }
 
     private void YesEnd()
     {
-        hasMakeup = true;
-
         makeupObject.spriteLibraryAsset = makeupLibrary;
 
         LevelManager.isAbleToMove = true;

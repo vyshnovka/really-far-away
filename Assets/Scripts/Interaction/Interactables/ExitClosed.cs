@@ -15,6 +15,7 @@ public class ExitClosed : Interactable
     {
         if (LevelManager.isWearingFullSet)
         {
+            LevelManager.hasTouchedEndline = true;
             GetComponent<Collider2D>().isTrigger = true;
             return;
         }

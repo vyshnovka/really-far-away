@@ -90,4 +90,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothesToHold: {fileID: 0}
-  type: {fileID: 0}
+  type: 0

@@ -49,6 +49,9 @@ public class InventoryManager : MonoBehaviour
     [Range(-100, 100)]
     private float offsetY = 48f;
 
+    [Header("Referenced interactable")]
+    [SerializeField]
+    private Interactable interactable;
 
     void Awake()
     {
@@ -82,13 +85,24 @@ public class InventoryManager : MonoBehaviour
             {
                 LevelManager.isWearingFullSet = true;
             }
+            else
+            {
+                LevelManager.isWearingFullSet = false;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.I))
         {
-            LevelManager.isAbleToMove = false;
+            if (LevelManager.hasTouchedEndline)
+            {
+                DialogueManager.instance.StartMonologue(interactable.dialogue, interactable);
+            }
+            else
+            {
+                LevelManager.isAbleToMove = false;
 
-            inventoryArea.SetActive(true);
+                inventoryArea.SetActive(true);
+            }
         }
     }
 
