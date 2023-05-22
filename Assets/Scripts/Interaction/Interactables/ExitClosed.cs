@@ -1,13 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ExitClosed : Interactable
 {
-    public override void Interact()
-    {
-
-    }
+    public override void Interact() { }
 
     public override void FinishInteraction()
     {

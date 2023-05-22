@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
@@ -21,10 +19,7 @@ public class ExitOpened : Interactable
 
     private bool hasMakeup = false;
 
-    public override void Interact()
-    {
-
-    }
+    public override void Interact() { }
 
     public override void FinishInteraction()
     {
