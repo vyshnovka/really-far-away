@@ -13,7 +13,7 @@ The project combines art inspiration, technical experiments, and a little bit of
 
 ## Setup
 
-1. Install Unity 2021.3.2 from [archive](https://unity3d.com/get-unity/download/archive).    
+1. Install Unity 2021.3.21 from [archive](https://unity3d.com/get-unity/download/archive).    
 2. Clone this repository using `git clone https://github.com/vyshnovka/really-far-away.git` in Git Bash.    
 4. Open created folder as a project in Unity Hub.    
 
