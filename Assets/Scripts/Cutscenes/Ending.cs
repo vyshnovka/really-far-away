@@ -13,5 +13,13 @@ public class Ending : MonoBehaviour
         }, 1f));
 
         ending.SetTrigger("end");
+
+        StartCoroutine(Utility.TimedEvent(() =>
+        {
+            Application.Quit();
+#if (UNITY_EDITOR)
+            Debug.Log("QUIT");
+#endif
+        }, 15f));
     }
 }
