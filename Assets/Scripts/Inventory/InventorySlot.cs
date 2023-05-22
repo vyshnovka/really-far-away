@@ -8,6 +8,8 @@ public class InventorySlot : Slot, IDragHandler, IEndDragHandler, IPointerEnterH
 
     private Coroutine pointerOn;
 
+    private bool isDragging = false;
+
     void Start()
     {
         startPos = transform.position;
@@ -15,6 +17,8 @@ public class InventorySlot : Slot, IDragHandler, IEndDragHandler, IPointerEnterH
 
     public void OnDrag(PointerEventData eventData)
     {
+        isDragging = true;
+
         ShopManager.instance.infoArea.SetActive(false);
 
         transform.position = Input.mousePosition;
@@ -27,6 +31,8 @@ public class InventorySlot : Slot, IDragHandler, IEndDragHandler, IPointerEnterH
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        isDragging = false;
+
         ShopManager.instance.sellArea.GetComponent<TextMeshProUGUI>().enabled = false;
 
         transform.position = startPos;
@@ -34,13 +40,16 @@ public class InventorySlot : Slot, IDragHandler, IEndDragHandler, IPointerEnterH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        pointerOn = StartCoroutine(Utility.TimedEvent(() => 
+        if (!isDragging)
         {
-            if (clothesToHold)
+            pointerOn = StartCoroutine(Utility.TimedEvent(() => 
             {
-                InventoryManager.instance.ShowInventoryItem(this);
-            }
-        }, 0.5f));
+                if (clothesToHold)
+                {
+                    InventoryManager.instance.ShowInventoryItem(this);
+                }
+            }, 0.5f));
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
