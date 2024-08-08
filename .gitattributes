@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ignore ShaderLab and HSLS files
+*.shader linguist-detectable=false
+*.cginc linguist-detectable=false
+
+# Ignore ASP.NET files from build
+*.aspx linguist-detectable=false
